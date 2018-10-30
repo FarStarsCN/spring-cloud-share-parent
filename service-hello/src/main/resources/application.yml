@@ -1,0 +1,12 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: service-hello
+
+eureka:
+  client:
+    service-url:
+      # 这个地方是个神坑，不能写成default-zone, 要用驼峰式
+      defaultZone: http://localhost:8081/eureka/

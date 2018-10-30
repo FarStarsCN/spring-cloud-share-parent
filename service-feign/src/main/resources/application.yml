@@ -1,0 +1,16 @@
+server:
+  port: 8092
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
+
+spring:
+  application:
+    name: service-feign
+
+# 默认false不开启服务的熔断机制
+feign:
+  hystrix:
+    enabled: true

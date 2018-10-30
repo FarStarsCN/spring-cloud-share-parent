@@ -1,0 +1,12 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: service-hello
+
+eureka:
+  client:
+    service-url:
+      # ����ط��Ǹ���ӣ�����д��default-zone, Ҫ���շ�ʽ
+      defaultZone: http://localhost:8081/eureka/

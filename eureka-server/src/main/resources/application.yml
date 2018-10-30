@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 是否从其他的服务中心同步服务列表
+    fetch-registry: false
+    # eureka本身会把自己也当成一个client，所以这里要表明是一个server
+    register-with-eureka: false
+    service-url:
+      # 这个地方是个神坑，不能写成default-zone, 要用驼峰式
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+spring:
+  application:
+    name: eureka-server
