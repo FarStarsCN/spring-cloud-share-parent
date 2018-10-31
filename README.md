@@ -45,13 +45,14 @@ Feign是一个声明式的伪Http客户端，默认实现了负载均衡，整�
 #### 第三小节：断路器
 简介：如果服务出现问题，调用这个服务就会出现线程阻塞，如果现在有大量的请求，就会消耗完资源，服务器就会瘫痪。  
 断路器就是在此时发生作用，可以给出发生错误时的解决办法。  
-![断路器](https://upload-images.jianshu.io/upload_images/2279594-8dcb1f208d62046f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+![断路器](https://upload-images.jianshu.io/upload_images/2279594-8dcb1f208d62046f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)  
+(图片来自于方志朋的博客，最下面有链接)
 
 #### 第四小节：路由转发和过滤
-zuul的主要功能就是路由和过滤，一般都是通过客户端负载均衡到zuul，然后再路由到服务器集群
+zuul的主要功能就是路由和过滤，一般都是通过客户端负载均衡到zuul，然后再路由到服务器集群。zuul默认和Ribbon结合实现了负载均衡的功能。
 
 ### 最终的架构
-![架构](http://192.168.0.241:9876/架构.png)
+![架构](http://132.232.103.155:9876/img/架构.png)
 
 #### 第五小节：学习资料参考
 - 博客大牛  
