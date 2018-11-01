@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8082
 
 spring:
   application:
@@ -8,5 +8,5 @@ spring:
 eureka:
   client:
     service-url:
-      # Õâ¸öµØ·½ÊÇ¸öÉñ¿Ó£¬²»ÄÜĞ´³Édefault-zone, ÒªÓÃÍÕ·åÊ½
+      # è¿™ä¸ªåœ°æ–¹æ˜¯ä¸ªç¥å‘ï¼Œä¸èƒ½å†™æˆdefault-zone, è¦ç”¨é©¼å³°å¼
       defaultZone: http://localhost:8081/eureka/

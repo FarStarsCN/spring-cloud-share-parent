@@ -5,12 +5,12 @@ eureka:
   instance:
     hostname: localhost
   client:
-    # ÊÇ·ñ´ÓÆäËûµÄ·şÎñÖĞĞÄÍ¬²½·şÎñÁĞ±í
+    # æ˜¯å¦ä»å…¶ä»–çš„æœåŠ¡ä¸­å¿ƒåŒæ­¥æœåŠ¡åˆ—è¡¨
     fetch-registry: false
-    # eureka±¾Éí»á°Ñ×Ô¼ºÒ²µ±³ÉÒ»¸öclient£¬ËùÒÔÕâÀïÒª±íÃ÷ÊÇÒ»¸öserver
+    # eurekaæœ¬èº«ä¼šæŠŠè‡ªå·±ä¹Ÿå½“æˆä¸€ä¸ªclientï¼Œæ‰€ä»¥è¿™é‡Œè¦è¡¨æ˜æ˜¯ä¸€ä¸ªserver
     register-with-eureka: false
     service-url:
-      # Õâ¸öµØ·½ÊÇ¸öÉñ¿Ó£¬²»ÄÜĞ´³Édefault-zone, ÒªÓÃÍÕ·åÊ½
+      # è¿™ä¸ªåœ°æ–¹æ˜¯ä¸ªç¥å‘ï¼Œä¸èƒ½å†™æˆdefault-zone, è¦ç”¨é©¼å³°å¼
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 spring:

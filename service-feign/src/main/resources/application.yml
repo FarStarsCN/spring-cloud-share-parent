@@ -10,7 +10,7 @@ spring:
   application:
     name: service-feign
 
-# 默认false不开启服务的熔断机制
+# 榛樿false涓嶅紑鍚湇鍔＄殑鐔旀柇鏈哄埗
 feign:
   hystrix:
     enabled: true
